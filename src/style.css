@@ -164,6 +164,44 @@ input::placeholder {
   cursor: pointer;
 }
 
+.footer {
+  /* background-color: red; */
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 50px;
+}
+
+.footer > :nth-child(1) {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  color: rgb(180, 179, 179);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  padding: 40px 0px;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: rgb(180, 179, 179);
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2px 0px;
+}
+
+.netflix-nepal {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: rgb(180, 179, 179);
+}
+
 @media (max-width: 768px) {
   .nav-bar {
     padding: 10px 20px;
@@ -226,16 +264,25 @@ input::placeholder {
     width: 120px;
   }
 
-  .FAQ{
+  .FAQ {
     padding: 25px 20px;
   }
-  
-  .FAQ h1{
+
+  .FAQ h1 {
     font-size: 15px;
   }
 
-  .question{
+  .question {
     font-size: 18px;
     padding: 15px 15px;
+  }
+
+  .footer {
+    padding: 20px 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
   }
 }
